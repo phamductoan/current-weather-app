@@ -36,6 +36,8 @@
                     },
                     error: function(error){
                         console.assert(error.responseText);
+                        alert("City not foud")
+                        location.reload()
                     }
                 });
             }
