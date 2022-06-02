@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Current Weather App</title>
+
+    <!-- font -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Current.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- Menu -->
+    <div class="container-fluid fixed-top">
+        <div class="row css">
+            <div class="col-sm-6 css-1">
+                <a href="#" type="button">Weather App</a>
+            </div>
+            <div class="col-sm-3 css-2">
+                <a href="index.html" type="button">Current</a>
+            </div>
+            <div class="col-sm-3 css-3">
+                <a href="forecast.html" type="button">Forecast</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Title -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 css-4">
+                <h3>Get Current Weather Information</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <p class="css-5">Enter City Name</p>
+        <div class="row" >
+            <div class="col-sm-4"></div>
+            <div class="col-sm-3">
+                <input class="form-control" type="text" placeholder="Enter City Name" id="ipn-city-name-curruent">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn" id="btn">Search City</button>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row css-8">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 css-7" style="display: none;" id="style">
+                <h6>Current Weather for Hanoi, VN</h6>
+                <div class="row">                   
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Weather:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Description:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <img src="" alt="" id="img-out" class="img">
+                        <output type="text" name="" id="uotput-weather-description"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Temperature:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Temperature"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Pressure:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Pressure"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Humidity:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Humidity"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Min Temperature:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Min-Temperature"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Max Temperature:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Max-Temperature"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Wind Speed:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Wind-Speed"></output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4 css-3">
+                        <label for="">Wind Direction:</label>
+                    </div>
+                    <div class="col-sm-7 css-9">
+                        <output type="text" name="" id="uotput-weather-Wind-Direction"></output>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <!-- Footer fixed bottom -->
+    <div class="container-fluid css-6">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Weather App</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

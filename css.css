@@ -1,0 +1,74 @@
+.css {
+    padding-top: 2ch;
+    background-color: white;
+}
+
+.css-1 {
+    text-align: center;
+    font-size: larger;
+}
+
+.css-2 {
+    text-align: right;
+}
+
+.css-3 {
+    text-align: left;
+}
+
+.css-4 {
+    text-align: center;
+    color: white;
+    background-color: #00BFFF;
+    padding: 85px 0 50px 0;
+}
+
+.css-5 {
+    text-align: center;
+    color: #00BFFF;
+    padding-top: 1ch;
+}
+
+
+.btn {
+    background-color: #00BFFF;
+}
+
+.css-6 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00BFFF;
+    color: white;
+    text-align: center;
+    padding-top: 1ch;
+}
+
+.table-1 {
+    background-color: #00BFFF;
+    color: white;
+}
+
+.css-7 {
+    text-align: center;
+    background-color: #00BFFF;
+    border-radius: 10px;
+    padding-top: 1ch;
+    color: white;
+}
+
+.css-8 {
+    padding-top: 1ch;
+}
+
+.css-9 {
+    text-align: left;
+}
+
+.css-10 {
+    text-align: center;
+}
+.img {
+    width:10%;
+}
